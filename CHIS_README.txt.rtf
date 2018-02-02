@@ -1,0 +1,40 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\})}{\leveltext\leveltemplateid1\'02\'00);}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid2\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 The intention of this exercise is to provide many different plots, culminating in a Mosaic plot that can then be recycled as a generic function to create a mosaic plot for any two numeric variables in a data frame.\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+Before you run the script:\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural
+\ls1\ilvl0\cf0 {\listtext	1)	}Ensure that you have the following packages installed using the install.packages() function:\
+\pard\tx940\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li1440\fi-1440\pardirnatural
+\ls1\ilvl1\cf0 {\listtext	\uc0\u8259 	}\'93ggplot2\'94\
+{\listtext	\uc0\u8259 	}\'93reshape2\'94\
+{\listtext	\uc0\u8259 	}\'93dplyr\'94\
+{\listtext	\uc0\u8259 	}\'93ggthemes\'94\
+{\listtext	\uc0\u8259 	}\'93foreign\'94\
+{\listtext	\uc0\u8259 	}\'93car\'94\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural
+\ls1\ilvl0\cf0 {\listtext	2)	}Make sure that you save the data-file from {\field{\*\fldinst{HYPERLINK "http://healthpolicy.ucla.edu/chis/data/public-use-data-file/Pages/public-use-data-files.aspx"}}{\fldrslt http://healthpolicy.ucla.edu/chis/data/public-use-data-file/Pages/public-use-data-files.aspx}} onto your computer and you then replace the file pathway in the 9th line of the script with your file pathway to \'93ADULT.sav\'94. You will need to register at UCLA\'92s link above.\
+{\listtext	3)	}You can now run the script and see all of the plots that follow for the CHIS data set.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+After running the script you will now have a generic function mosaicGG(data, X, FILL) where:\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural
+\ls2\ilvl0\cf0 {\listtext	\'95	}\'93data\'94 is your specified data frame\
+{\listtext	\'95	}\'93X\'94 is the column of data frame \'93data\'94 that will appear along the x-axis in bins - this is normally a discrete variable.\
+{\listtext	\'95	}\'93FILL\'94 is the column of data frame \'93data\'94 that will appear as the categories along the y-axis in which the proportion of that category to the whole amount of the bin will appear. This is normally a discrete variable with a small number of factor levels.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 \
+The width of the rectangles in the mosaic represent the relative frequency of that bin statistic in the overall data set. As you can see, for example, in the SRAGE_P column, folks in their 20\'92s have a relatively low entries of data compared to folks in their 50\'92s (since the bars of the 50\'92s bins are wider).\
+\
+The shading of the rectangles also has significance. A red-shaded box represents that that particular group of folks does not statistically have as many data entries as would be expected (an under-represented group) whereas the blue-shaded rectangles have more data entries than would be statistically expected (an over-represented group).\
+\
+}
